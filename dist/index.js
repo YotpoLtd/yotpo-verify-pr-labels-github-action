@@ -34,7 +34,7 @@ module.exports =
 /******/ 	// the startup function
 /******/ 	function startup() {
 /******/ 		// Load entry module and return exports
-/******/ 		return __webpack_require__(952);
+/******/ 		return __webpack_require__(388);
 /******/ 	};
 /******/
 /******/ 	// run startup
@@ -43,15 +43,7 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
-/***/ 706:
-/***/ (function() {
-
-eval("require")("@actions/github");
-
-
-/***/ }),
-
-/***/ 952:
+/***/ 388:
 /***/ (function(__unusedmodule, __unusedexports, __webpack_require__) {
 
 const core = __webpack_require__(968);
@@ -66,6 +58,14 @@ console.log('Labels on this pull request are: ' + labelNames)
 if (!(releaseLabels.some(releaseLabel => labelNames.includes(releaseLabel)))) {
     core.setFailed('Your pull request should contain one of the release labels: major, minor or patch');
 }
+
+
+/***/ }),
+
+/***/ 706:
+/***/ (function() {
+
+eval("require")("@actions/github");
 
 
 /***/ }),
