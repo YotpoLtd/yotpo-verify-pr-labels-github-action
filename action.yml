@@ -2,6 +2,6 @@ name: 'Contains release labels'
 description: 'Look for major,minor or patch labels'
 runs:
   using: 'node12'
-  main: 'index.js'
+  main: 'dist/index.js'
  
  
