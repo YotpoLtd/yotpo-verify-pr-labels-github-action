@@ -1,0 +1,8 @@
+{
+  "name": "yotpo-verify-pr-labels-github-action",
+  "version": "1.0.0",
+  "dependencies": {
+    "@actions/core": "^1.2.0",
+    "@actions/github": "^1.1.0"
+  }
+}
