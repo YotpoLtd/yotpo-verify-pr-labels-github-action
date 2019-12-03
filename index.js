@@ -1,12 +1,13 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
 
-const releaseLabels = ['major', 'minor', 'patch']
+const requiredLabels = core.getInput('requiredLabels');
+console.log('required labels are: ' + requiredLabels)
+
 const labels = github.context.payload.pull_request.labels
 const labelNames = labels.map(label => label.name)
+console.log('labels on this pull request are: ' + labelNames)
 
-console.log('Labels on this pull request are: ' + labelNames)
-
-if (!(releaseLabels.some(releaseLabel => labelNames.includes(releaseLabel)))) {
-    core.setFailed('Your pull request should contain one of the release labels: major, minor or patch');
+if (!(requiredLabels.some(requiredLabel => labelNames.includes(requiredLabel)))) {
+    core.setFailed('Your pull request should contain one of the required labels: ' + requiredLabels);
 }

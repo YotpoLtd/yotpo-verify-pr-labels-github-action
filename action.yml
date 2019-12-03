@@ -1,5 +1,9 @@
-name: 'Contains release labels'
-description: 'Look for major,minor or patch labels'
+name: 'Contains labels'
+description: 'Look for input labels in Pull Request'
+inputs:
+  requiredLabels:
+    description: 'required labels'
+    required: true
 runs:
   using: 'node12'
   main: 'dist/index.js'
