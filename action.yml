@@ -2,8 +2,9 @@ name: 'Contains labels'
 description: 'Look for input labels in Pull Request'
 inputs:
   requiredLabels:
-    description: 'required labels'
+    description: 'comma separated required labels'
     required: true
+    default: ''
 runs:
   using: 'node12'
   main: 'dist/index.js'
