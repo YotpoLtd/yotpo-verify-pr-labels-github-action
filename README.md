@@ -7,4 +7,4 @@ If you make changes to it, you should then run the following:
  
 Compile the source code into dist/index.js file that is run from action.yml
 
-```ncc build check-labels.js```
+```ncc build index.js```
