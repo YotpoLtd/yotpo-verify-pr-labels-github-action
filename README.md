@@ -1,6 +1,6 @@
 # yotpo-verify-pr-labels-github-action
 
-The action source code is in check-labels.js.
+The action source code is in index.js.
 If you make changes to it, you should then run the following:
 
  ```npm i -g @zeit/ncc```
