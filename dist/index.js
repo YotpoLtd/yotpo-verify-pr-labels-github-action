@@ -6006,7 +6006,7 @@ module.exports = require("events");
 const core = __webpack_require__(827);
 const github = __webpack_require__(148);
 
-const commaSeparatedRequiredLabels = core.getInput('requiredLabels');
+const commaSeparatedRequiredLabels = core.getInput('one-of');
 
 if (commaSeparatedRequiredLabels) {
     const requiredLabels = commaSeparatedRequiredLabels.split(',')

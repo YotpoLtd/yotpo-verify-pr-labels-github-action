@@ -1,7 +1,7 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
 
-const commaSeparatedRequiredLabels = core.getInput('requiredLabels');
+const commaSeparatedRequiredLabels = core.getInput('one-of');
 
 if (commaSeparatedRequiredLabels) {
     const requiredLabels = commaSeparatedRequiredLabels.split(',')

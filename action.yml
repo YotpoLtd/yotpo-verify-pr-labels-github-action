@@ -1,7 +1,7 @@
 name: 'Contains labels'
 description: 'Look for input labels in Pull Request'
 inputs:
-  requiredLabels:
+  one-of:
     description: 'comma separated required labels'
     required: true
     default: ''
