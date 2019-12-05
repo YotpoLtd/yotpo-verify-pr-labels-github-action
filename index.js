@@ -6,8 +6,9 @@ const commaSeparatedRequiredLabels = core.getInput('one-of');
 if (commaSeparatedRequiredLabels) {
     const requiredLabels = commaSeparatedRequiredLabels.split(',')
     console.log('required labels are: ' + requiredLabels)
-    
-    const labels = github.context.payload.pull_request.labels
+    console.log(github)
+    const labels = github.payload.pull_request.labels
+    console.log('labels:'+ labels)
     const labelNames = labels.map(label => label.name)
     console.log('labels on this pull request are: ' + labelNames)
     
